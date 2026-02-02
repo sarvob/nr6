@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
-import type { Metadata } from 'next'
+import { getDb } from '@/lib/firebase'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 const contactInfo = [
   {
@@ -34,16 +35,70 @@ export default function ContactPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    setSubmitted(true)
+    try {
+      const db = getDb()
+      
+      // Save contact submission to Firestore
+      // This will trigger the email extension if configured
+      await addDoc(collection(db, 'contact_submissions'), {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        created_at: serverTimestamp(),
+        status: 'new', // new, replied, resolved
+        replied: false,
+        notes: '',
+      })
+
+      // Also add to mail collection for Firebase Trigger Email extension
+      await addDoc(collection(db, 'mail'), {
+        to: ['support@nr6.ca'], // Admin email
+        replyTo: formData.email,
+        message: {
+          subject: `[NR6.ca Contact] ${formData.subject}`,
+          html: `
+            <h2>New Contact Form Submission</h2>
+            <p><strong>From:</strong> ${formData.name} (${formData.email})</p>
+            <p><strong>Subject:</strong> ${formData.subject}</p>
+            <hr />
+            <p><strong>Message:</strong></p>
+            <p>${formData.message.replace(/\n/g, '<br>')}</p>
+            <hr />
+            <p style="color: #666; font-size: 12px;">
+              This message was sent via the NR6.ca contact form.
+              Reply directly to this email to respond to the customer.
+            </p>
+          `,
+          text: `
+New Contact Form Submission
+
+From: ${formData.name} (${formData.email})
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This message was sent via the NR6.ca contact form.
+          `,
+        },
+      })
+
+      setSubmitted(true)
+    } catch (err) {
+      console.error('Error submitting contact form:', err)
+      setError('Failed to send message. Please try again or email us directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -179,6 +234,12 @@ export default function ContactPage() {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     />
                   </div>
+
+                  {error && (
+                    <div className="p-3 bg-red-50 border border-red-200 rounded-md text-red-700 text-sm">
+                      {error}
+                    </div>
+                  )}
                   
                   <button
                     type="submit"
