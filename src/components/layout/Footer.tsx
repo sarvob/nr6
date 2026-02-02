@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 
 const footerLinks = {
   services: [
@@ -44,15 +44,9 @@ export function Footer() {
                   support@nr6.ca
                 </a>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <a href="tel:+18005551234" className="hover:text-white transition-colors">
-                  1-800-555-1234
-                </a>
-              </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1" />
-                <span>123 Bay Street, Suite 400<br />Toronto, ON M5H 2Y4</span>
+                <span>Toronto, Ontario, Canada</span>
               </div>
             </div>
           </div>

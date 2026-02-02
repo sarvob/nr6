@@ -106,7 +106,7 @@ export default function HomePage() {
             </p>
             <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary mb-8">
               <DollarSign className="w-8 h-8" />
-              <span>$999 Flat Fee Per Property</span>
+              <span>$999 CAD Flat Fee Per Property</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/start" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center gap-2">
@@ -182,7 +182,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex items-center justify-center gap-1 mb-4">
                   <span className="text-5xl font-bold text-primary">$999</span>
-                  <span className="text-muted">USD / property / year</span>
+                  <span className="text-muted">CAD / property / year</span>
                 </div>
                 <ul className="text-left max-w-sm mx-auto space-y-3 mb-6">
                   {[

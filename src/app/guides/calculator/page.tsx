@@ -189,7 +189,7 @@ export default function CalculatorPage() {
                 <div className="flex items-start gap-3">
                   <DollarSign className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-semibold text-foreground">Our Service: $999</p>
+                    <p className="font-semibold text-foreground">Our Service: $999 CAD</p>
                     <p className="text-sm text-muted mt-1">
                       {savings > 999 
                         ? `With potential savings of $${savings.toLocaleString()}, our service pays for itself ${(savings / 999).toFixed(1)}x over!`

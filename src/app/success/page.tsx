@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { CheckCircle, Mail, Clock, Phone } from 'lucide-react'
+import { CheckCircle, Mail, Clock } from 'lucide-react'
 
 export default function SuccessPage() {
   const [orderId, setOrderId] = useState<string>('...')
@@ -88,14 +88,10 @@ export default function SuccessPage() {
             <p className="text-sm text-muted mb-3">
               If you have any questions about your filing, please don't hesitate to contact us.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
+            <div className="flex justify-center text-sm">
               <a href="mailto:support@nr6.ca" className="flex items-center justify-center gap-2 text-primary-light hover:text-primary">
                 <Mail className="w-4 h-4" />
                 support@nr6.ca
-              </a>
-              <a href="tel:+18005551234" className="flex items-center justify-center gap-2 text-primary-light hover:text-primary">
-                <Phone className="w-4 h-4" />
-                1-800-555-1234
               </a>
             </div>
           </div>

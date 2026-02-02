@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Send } from 'lucide-react'
+import { Mail, MapPin, Send } from 'lucide-react'
 import { getDb } from '@/lib/firebase'
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
@@ -13,15 +13,9 @@ const contactInfo = [
     href: 'mailto:support@nr6.ca',
   },
   {
-    icon: Phone,
-    label: 'Phone',
-    value: '1-800-555-1234',
-    href: 'tel:+18005551234',
-  },
-  {
     icon: MapPin,
-    label: 'Address',
-    value: '123 Bay Street, Suite 400\nToronto, ON M5H 2Y4\nCanada',
+    label: 'Location',
+    value: 'Toronto, Ontario, Canada',
     href: null,
   },
 ]

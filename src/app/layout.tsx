@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'NR6.ca - NR6 Filing Service for Non-Resident Landlords',
-  description: 'Professional NR6 form filing service for non-resident landlords in Canada. Save up to 75% on withholding tax. Flat fee of $999 per property.',
+  description: 'Professional NR6 form filing service for non-resident landlords in Canada. Save up to 75% on withholding tax. Flat fee of $999 CAD per property.',
   keywords: 'NR6, non-resident landlord, Canada tax, withholding tax, rental income, CRA',
   authors: [{ name: 'NR6.ca' }],
   openGraph: {

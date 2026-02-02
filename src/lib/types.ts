@@ -21,7 +21,6 @@ export interface FilingData {
   // Step 4 - Contact Information
   full_name: string
   email: string
-  phone: string
   country_of_residence: string
   file_upload?: File | null
   checkbox_confirm: boolean
@@ -61,7 +60,6 @@ export const initialFilingData: FilingData = {
   other_expenses: 0,
   full_name: '',
   email: '',
-  phone: '',
   country_of_residence: '',
   file_upload: null,
   checkbox_confirm: false,

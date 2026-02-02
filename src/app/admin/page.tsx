@@ -12,7 +12,6 @@ import {
   Eye, 
   X,
   Mail,
-  Phone,
   MapPin,
   DollarSign,
   FileText,
@@ -518,12 +517,8 @@ export default function AdminPage() {
                     <p className="text-muted">Email</p>
                     <p className="font-medium">{selectedFiling.email}</p>
                   </div>
-                  <div>
-                    <p className="text-muted">Phone</p>
-                    <p className="font-medium">{selectedFiling.phone}</p>
-                  </div>
-                  <div>
-                    <p className="text-muted">Country</p>
+                  <div className="col-span-2">
+                    <p className="text-muted">Country of Residence</p>
                     <p className="font-medium">{selectedFiling.country_of_residence}</p>
                   </div>
                 </div>

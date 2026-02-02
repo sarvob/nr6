@@ -3,7 +3,7 @@ import { CheckCircle, X, ArrowRight } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing - NR6.ca | $999 Flat Fee NR6 Filing Service',
+  title: 'Pricing - NR6.ca | $999 CAD Flat Fee NR6 Filing Service',
   description: 'Transparent pricing for NR6 filing. $999 flat fee per property includes preparation, submission, agent services, and support. No hidden fees.',
 }
 
@@ -78,7 +78,7 @@ export default function PricingPage() {
                 </p>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
                   <span className="text-6xl font-bold text-primary">$999</span>
-                  <span className="text-muted text-lg">USD</span>
+                  <span className="text-muted text-lg">CAD</span>
                 </div>
                 <p className="text-muted">per property, per year</p>
               </div>

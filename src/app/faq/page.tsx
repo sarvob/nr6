@@ -34,11 +34,11 @@ const faqs = [
     questions: [
       {
         question: 'Do I need a Canadian agent?',
-        answer: 'Yes, CRA requires non-resident landlords filing NR6 to have a Canadian resident agent. This agent is responsible for receiving correspondence from CRA and ensuring tax obligations are met. Our $999 service fee includes Canadian agent services—we serve as your agent at no extra cost.',
+        answer: 'Yes, CRA requires non-resident landlords filing NR6 to have a Canadian resident agent. This agent is responsible for receiving correspondence from CRA and ensuring tax obligations are met. Our $999 CAD service fee includes Canadian agent services—we serve as your agent at no extra cost.',
       },
       {
         question: 'What does the $999 fee include?',
-        answer: 'The $999 flat fee covers everything: NR6 form preparation, submission to CRA, Canadian agent services (required by CRA), withholding calculation assistance, email support, and annual reminders for renewal. There are no hidden fees or hourly charges.',
+        answer: 'The $999 CAD flat fee covers everything: NR6 form preparation, submission to CRA, Canadian agent services (required by CRA), withholding calculation assistance, email support, and annual reminders for renewal. There are no hidden fees or hourly charges.',
       },
       {
         question: 'How long does the process take?',

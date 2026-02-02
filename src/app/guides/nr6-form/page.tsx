@@ -152,7 +152,7 @@ export default function NR6FormGuidePage() {
             Ready to Start Saving?
           </h2>
           <p className="text-blue-100 text-lg mb-8">
-            Let us handle your NR6 filing. $999 flat fee, all-inclusive.
+            Let us handle your NR6 filing. $999 CAD flat fee, all-inclusive.
           </p>
           <Link href="/start" className="bg-white text-primary px-8 py-4 rounded-md font-semibold text-lg inline-flex items-center gap-2 hover:bg-blue-50 transition-colors">
             File My NR6 Now

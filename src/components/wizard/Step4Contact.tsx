@@ -10,7 +10,6 @@ import { useState, useRef } from 'react'
 const schema = z.object({
   full_name: z.string().min(2, 'Please enter your full name'),
   email: z.string().email('Please enter a valid email address'),
-  phone: z.string().min(10, 'Please enter a valid phone number'),
   country_of_residence: z.string().min(2, 'Please enter your country of residence'),
   checkbox_confirm: z.literal(true, {
     errorMap: () => ({ message: 'You must confirm the information is accurate' }),
@@ -49,7 +48,6 @@ export function Step4Contact() {
     defaultValues: {
       full_name: data.full_name,
       email: data.email,
-      phone: data.phone,
       country_of_residence: data.country_of_residence,
       checkbox_confirm: data.checkbox_confirm ? true : undefined,
     },
@@ -130,23 +128,9 @@ export function Step4Contact() {
         {errors.email && (
           <p className="error-message">{errors.email.message}</p>
         )}
-      </div>
-
-      {/* Phone */}
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1">
-          Phone Number <span className="text-red-500">*</span>
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          {...register('phone')}
-          className={`input-field ${errors.phone ? 'input-error' : ''}`}
-          placeholder="+1 555 123 4567"
-        />
-        {errors.phone && (
-          <p className="error-message">{errors.phone.message}</p>
-        )}
+        <p className="text-sm text-muted mt-1">
+          We'll send all updates and confirmations to this email
+        </p>
       </div>
 
       {/* Country of Residence */}

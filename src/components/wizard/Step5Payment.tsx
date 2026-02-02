@@ -181,7 +181,7 @@ export function Step5Payment() {
           ) : (
             <>
               <CreditCard className="w-5 h-5" />
-              Submit & Pay $999 USD
+              Submit & Pay $999 CAD
             </>
           )}
         </button>
