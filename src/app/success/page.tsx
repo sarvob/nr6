@@ -1,20 +1,21 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { CheckCircle, Mail, Clock, Phone } from 'lucide-react'
-import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
-  title: 'Payment Successful - NR6.ca',
-  description: 'Thank you for your NR6 filing submission. We will process your request shortly.',
-}
+export default function SuccessPage() {
+  const [orderId, setOrderId] = useState<string>('...')
 
-interface SuccessPageProps {
-  searchParams: Promise<{ session_id?: string }>
-}
-
-export default async function SuccessPage({ searchParams }: SuccessPageProps) {
-  const params = await searchParams
-  const sessionId = params.session_id || 'N/A'
-  const orderId = sessionId.slice(0, 16).toUpperCase()
+  useEffect(() => {
+    // Get session_id from URL on client side
+    const params = new URLSearchParams(window.location.search)
+    const sessionId = params.get('session_id') || 'N/A'
+    setOrderId(sessionId.slice(0, 16).toUpperCase())
+    
+    // Clear the wizard draft from localStorage
+    localStorage.removeItem('nr6_wizard_draft')
+  }, [])
 
   return (
     <div className="py-16 bg-gray-50 min-h-[calc(100vh-200px)]">

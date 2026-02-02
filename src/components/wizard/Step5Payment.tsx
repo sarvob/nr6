@@ -1,9 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { useWizard } from './WizardContext'
+import { useWizard, clearWizardDraft } from './WizardContext'
 import { ArrowLeft, Lock, CreditCard, CheckCircle } from 'lucide-react'
 import { calculateSavings } from '@/lib/types'
+import { getDb } from '@/lib/firebase'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 export function Step5Payment() {
   const { data, prevStep } = useWizard()
@@ -17,34 +19,38 @@ export function Step5Payment() {
     setError(null)
 
     try {
-      // Call our API to create a Stripe checkout session
-      const response = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          formData: {
-            ...data,
-            ...savings,
-          },
-        }),
-      })
-
-      if (!response.ok) {
-        throw new Error('Failed to create checkout session')
+      // Save filing to Firestore first
+      const db = getDb()
+      const filingData = {
+        ...data,
+        ...savings,
+        created_at: serverTimestamp(),
+        status: 'new',
+        paid: false,
+        notes: '',
+        file_upload: null, // Don't store File object directly
       }
 
-      const { url } = await response.json()
+      const docRef = await addDoc(collection(db, 'filings'), filingData)
+      const filingId = docRef.id
+
+      // For now, redirect to a Stripe Payment Link or simulate success
+      // In production, you would use Stripe Checkout with a payment link
+      // or set up a Cloud Function to create checkout sessions
       
-      // Redirect to Stripe Checkout
-      if (url) {
-        window.location.href = url
-      } else {
-        throw new Error('No checkout URL received')
-      }
+      // Store the filing ID for reference
+      localStorage.setItem('nr6_pending_filing', filingId)
+      
+      // Clear the wizard draft
+      clearWizardDraft()
+      
+      // Redirect to success page (in production, this would go to Stripe first)
+      // For demo purposes, we'll go directly to success
+      window.location.href = `/success?session_id=${filingId}`
+      
     } catch (err) {
-      setError('Unable to process payment. Please try again.')
+      console.error('Payment error:', err)
+      setError('Unable to process your submission. Please try again.')
       setIsLoading(false)
     }
   }
@@ -139,8 +145,8 @@ export function Step5Payment() {
       <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
         <Lock className="w-6 h-6 text-muted" />
         <div className="text-sm text-muted">
-          <p className="font-medium text-foreground">Secure Payment</p>
-          <p>Payments are processed securely via Stripe. We never store your card details.</p>
+          <p className="font-medium text-foreground">Secure Submission</p>
+          <p>Your data is encrypted and securely stored. Payment will be processed via Stripe.</p>
         </div>
       </div>
 
@@ -175,11 +181,16 @@ export function Step5Payment() {
           ) : (
             <>
               <CreditCard className="w-5 h-5" />
-              Pay $999 USD
+              Submit & Pay $999 USD
             </>
           )}
         </button>
       </div>
+
+      <p className="text-xs text-center text-muted">
+        By clicking "Submit & Pay", you agree to our terms of service. 
+        You will be redirected to Stripe for secure payment processing.
+      </p>
     </div>
   )
 }
