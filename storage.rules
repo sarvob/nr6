@@ -1,0 +1,10 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Filing documents - only authenticated admin users can read
+    match /filings/{filingId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if false; // Only server-side uploads
+    }
+  }
+}
