@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 }
 
 const blogPosts = [
+  // NEW SEO-FOCUSED ARTICLES
   {
     slug: 'nr6-form-explained-2026-guide',
     title: 'NR6 Form Explained: Who Needs to File It and Why It Matters (2026 Guide)',
@@ -43,6 +44,61 @@ const blogPosts = [
     readTime: '9 min read',
     category: 'Tax Rates',
     image: 'https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=800&h=400&fit=crop',
+  },
+  // ORIGINAL ARTICLES
+  {
+    slug: 'nr6-for-airbnb-hosts',
+    title: 'Can Airbnb Hosts File NR6? Everything You Need to Know',
+    excerpt: 'If you own a short-term rental in Canada and live abroad, you might be wondering if NR6 applies to you. The answer could save you thousands.',
+    date: '2026-01-15',
+    readTime: '6 min read',
+    category: 'Short-Term Rentals',
+    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=400&fit=crop',
+  },
+  {
+    slug: 'nr6-for-us-residents',
+    title: 'American Landlords in Canada: Your Complete NR6 Guide',
+    excerpt: 'Own Canadian property but live in the US? Here\'s how to navigate the cross-border tax implications and keep more of your rental income.',
+    date: '2026-01-10',
+    readTime: '8 min read',
+    category: 'Cross-Border',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop',
+  },
+  {
+    slug: 'common-nr6-mistakes',
+    title: '5 Costly NR6 Mistakes That Could Cost You Thousands',
+    excerpt: 'These common filing errors lead to rejected applications, missed savings, and CRA headaches. Here\'s how to avoid every single one.',
+    date: '2026-01-05',
+    readTime: '5 min read',
+    category: 'Mistakes to Avoid',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop',
+  },
+  {
+    slug: 'do-you-need-a-canadian-agent',
+    title: 'Why CRA Requires a Canadian Agent (And How to Get One)',
+    excerpt: 'No Canadian agent means no NR6 approval. Learn what agents do, why they\'re mandatory, and the easiest way to get one.',
+    date: '2025-12-20',
+    readTime: '4 min read',
+    category: 'Requirements',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop',
+  },
+  {
+    slug: 'buying-canadian-property-non-resident',
+    title: 'Buying Canadian Real Estate as a Non-Resident: Tax Planning 101',
+    excerpt: 'Before you invest, understand the tax implications. From purchase to rental to sale—here\'s what non-residents need to know.',
+    date: '2025-12-15',
+    readTime: '7 min read',
+    category: 'Investment',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop',
+  },
+  {
+    slug: 'filed-nr6-whats-next',
+    title: 'I Filed My NR6—Now What? Your Complete Next Steps Guide',
+    excerpt: 'You submitted your NR6. Great! But the process isn\'t over. Here\'s exactly what happens next and what you need to do to stay compliant.',
+    date: '2025-12-10',
+    readTime: '5 min read',
+    category: 'After Filing',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=400&fit=crop',
   },
 ]
 

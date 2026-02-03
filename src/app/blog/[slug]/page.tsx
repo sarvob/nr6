@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 // =============================================================================
-// ARTICLE 1: NR6 Form Explained (2026 Guide)
+// ARTICLE 1: NR6 Form Explained (2026 Guide) - NEW
 // =============================================================================
 const article1 = {
   title: 'NR6 Form Explained: Who Needs to File It and Why It Matters (2026 Guide)',
@@ -60,10 +60,6 @@ const article1 = {
         </li>
       </ul>
 
-      <p>
-        If you're a Canadian citizen living abroad, a foreigner who invested in Canadian real estate, or an expat who kept your property when you moved—NR6 applies to you.
-      </p>
-
       <h2>What Happens If You Don't File NR6?</h2>
       <p>
         Without an approved NR6, your property manager (or tenant, if they pay you directly) is <strong>legally required</strong> to:
@@ -84,7 +80,7 @@ const article1 = {
       </div>
 
       <p>
-        Let's put real numbers to this. Say you collect $3,000/month in rent ($36,000/year), but you have $20,000 in expenses (mortgage interest, property tax, etc.):
+        Let's put real numbers to this. Say you collect $3,000/month in rent ($36,000/year), but you have $20,000 in expenses:
       </p>
 
       <div className="bg-gray-50 rounded-xl p-6 my-8">
@@ -140,7 +136,7 @@ const article1 = {
             <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-foreground">"NR6 is only for big landlords"</p>
-              <p className="text-muted text-sm mt-1">Wrong. Even one property benefits from NR6. In fact, the savings percentage is often higher for single-property owners with significant expenses.</p>
+              <p className="text-muted text-sm mt-1">Wrong. Even one property benefits from NR6. The savings percentage is often higher for single-property owners with significant expenses.</p>
             </div>
           </div>
         </div>
@@ -157,15 +153,9 @@ const article1 = {
         <li><strong>Your signature</strong> and your agent's signature</li>
       </ol>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 my-6">
-        <p className="text-sm text-blue-800">
-          <strong>About the Canadian Agent:</strong> This is a CRA requirement that trips up many non-residents. Your agent must be a Canadian resident who takes on legal responsibility for your filing. Many landlords use their property manager, a family member in Canada, or a professional service like NR6.ca (we include agent services in our flat fee).
-        </p>
-      </div>
-
       <h2>When to File NR6</h2>
       <p>
-        The NR6 should be filed <strong>before</strong> you receive your first rental payment of the year. For most landlords, this means:
+        The NR6 should be filed <strong>before</strong> you receive your first rental payment of the year. For most landlords:
       </p>
       <ul className="space-y-2 my-6">
         <li className="flex items-start gap-3">
@@ -177,23 +167,8 @@ const article1 = {
           <span>Before your <strong>first rent payment</strong> if you buy a new property mid-year</span>
         </li>
       </ul>
-      <p>
-        CRA takes 4-8 weeks to process, so don't wait until the last minute.
-      </p>
-
-      <h2>What Happens After You File NR6?</h2>
-      <p>Once CRA approves your NR6:</p>
-      <ol className="space-y-2 my-6 list-decimal list-inside">
-        <li>Your property manager withholds tax on <strong>net income</strong> instead of gross</li>
-        <li>They remit the reduced amount to CRA monthly</li>
-        <li>You must file a <strong>Section 216 return</strong> by June 30 of the following year</li>
-        <li>The 216 reconciles what was withheld vs. what you actually owe</li>
-      </ol>
 
       <h2>Ready to File?</h2>
-      <p>
-        Filing NR6 correctly isn't complicated, but it does require getting the details right. Miss a deadline or forget the Canadian agent requirement, and you're back to 25% on gross.
-      </p>
       <p>
         At NR6.ca, we handle the entire process for a flat $999 CAD fee—including acting as your Canadian agent. Most clients complete our form in under 7 minutes.
       </p>
@@ -202,7 +177,7 @@ const article1 = {
 };
 
 // =============================================================================
-// ARTICLE 2: NR6 Deadline Missed
+// ARTICLE 2: NR6 Deadline Missed - NEW
 // =============================================================================
 const article2 = {
   title: 'NR6 Deadline Missed? What Happens If You File Late (Penalties & Fixes)',
@@ -215,7 +190,7 @@ const article2 = {
   content: (
     <>
       <p className="text-xl text-muted leading-relaxed mb-8">
-        You just realized you should have filed an NR6 but didn't. Maybe you didn't know about it. Maybe your accountant never mentioned it. Maybe life just got busy. Whatever the reason, you're now wondering: <em>How bad is this?</em>
+        You just realized you should have filed an NR6 but didn't. Maybe you didn't know about it. Maybe your accountant never mentioned it. Whatever the reason, you're now wondering: <em>How bad is this?</em>
       </p>
 
       <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mb-8">
@@ -259,55 +234,8 @@ const article2 = {
       </div>
 
       <p>
-        The key point: NR6 only applies <strong>going forward</strong> from when it's approved. It's not retroactive. If you file late, you can't recover the extra withholding from earlier months (at least not through NR6).
+        The key point: NR6 only applies <strong>going forward</strong> from when it's approved. It's not retroactive.
       </p>
-
-      <h2>What Happens If You Don't File NR6?</h2>
-      <p>Here's the timeline of consequences:</p>
-
-      <div className="space-y-4 my-8">
-        <div className="bg-white border-2 border-yellow-200 rounded-xl p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="text-xl">📅</span>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground">Month 1-12: Overpaying Withholding</h4>
-              <p className="text-muted text-sm mt-1">
-                Without NR6, 25% of your <strong>gross rent</strong> is withheld every month. If you have significant expenses, you're likely overpaying by thousands.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white border-2 border-yellow-200 rounded-xl p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="text-xl">📝</span>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground">By June 30 Next Year: Section 216 Return</h4>
-              <p className="text-muted text-sm mt-1">
-                You can (and should) file a Section 216 return to claim a refund of excess tax withheld. This is your path to getting money back, but it takes time.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white border-2 border-yellow-200 rounded-xl p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0">
-              <span className="text-xl">💸</span>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground">3-6 Months Later: Refund (Maybe)</h4>
-              <p className="text-muted text-sm mt-1">
-                CRA processes your 216 and issues a refund for overpaid tax. But this could be 12-18 months after you actually paid the money. That's your money sitting with CRA, earning them interest instead of you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <h2>Can NR6 Be Filed Retroactively?</h2>
       <p>
@@ -324,42 +252,6 @@ const article2 = {
         </p>
       </div>
 
-      <h2>Late NR6 vs. No NR6: What's the Difference?</h2>
-
-      <div className="overflow-x-auto my-8">
-        <table className="w-full border-collapse text-sm">
-          <thead>
-            <tr className="border-b-2 border-primary bg-blue-50">
-              <th className="text-left py-3 px-4 font-semibold">Scenario</th>
-              <th className="text-left py-3 px-4 font-semibold">What Happens</th>
-              <th className="text-left py-3 px-4 font-semibold">Recovery Path</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b">
-              <td className="py-3 px-4 font-medium">NR6 filed on time</td>
-              <td className="py-3 px-4 text-green-600">Reduced withholding all year</td>
-              <td className="py-3 px-4">N/A — you're optimized</td>
-            </tr>
-            <tr className="border-b bg-gray-50">
-              <td className="py-3 px-4 font-medium">NR6 filed late (mid-year)</td>
-              <td className="py-3 px-4 text-yellow-600">Overpaying until approved</td>
-              <td className="py-3 px-4">Section 216 for early months + reduced withholding for rest of year</td>
-            </tr>
-            <tr className="border-b">
-              <td className="py-3 px-4 font-medium">No NR6 filed</td>
-              <td className="py-3 px-4 text-red-600">25% of gross all year</td>
-              <td className="py-3 px-4">Section 216 for full year refund</td>
-            </tr>
-            <tr className="bg-gray-50">
-              <td className="py-3 px-4 font-medium">No NR6, no Section 216</td>
-              <td className="py-3 px-4 text-red-600">Massive overpayment, no recovery</td>
-              <td className="py-3 px-4">You just gave CRA free money</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <h2>How to Minimize Damage If You Already Missed It</h2>
       <p>If you're reading this and haven't filed NR6 yet:</p>
 
@@ -368,14 +260,14 @@ const article2 = {
           <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
           <div>
             <p className="font-semibold">File NR6 immediately</p>
-            <p className="text-muted text-sm">Every day you wait is another day of 25% gross withholding. File now to start the clock on reduced withholding.</p>
+            <p className="text-muted text-sm">Every day you wait is another day of 25% gross withholding.</p>
           </div>
         </li>
         <li className="flex items-start gap-4">
           <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
           <div>
             <p className="font-semibold">Track your expenses carefully</p>
-            <p className="text-muted text-sm">You'll need them for your Section 216 return to claim a refund for the months without NR6.</p>
+            <p className="text-muted text-sm">You'll need them for your Section 216 return to claim a refund.</p>
           </div>
         </li>
         <li className="flex items-start gap-4">
@@ -396,17 +288,14 @@ const article2 = {
 
       <h2>The Bottom Line</h2>
       <p>
-        There's no specific "NR6 late filing penalty" from CRA. But the consequence of not filing—or filing late—is that you overpay tax and have to wait 12+ months to get it back. That's the real penalty: lost time value of your money.
-      </p>
-      <p>
-        The best fix? Don't let it happen again. File your NR6 on time, every year. At NR6.ca, we send annual reminders to all our clients so they never miss the deadline.
+        There's no specific "NR6 late filing penalty" from CRA. But the consequence of not filing—or filing late—is that you overpay tax and have to wait 12+ months to get it back.
       </p>
     </>
   ),
 };
 
 // =============================================================================
-// ARTICLE 3: NR6 vs Section 216
+// ARTICLE 3: NR6 vs Section 216 - NEW
 // =============================================================================
 const article3 = {
   title: 'NR6 vs Section 216: What\'s the Difference and Do You Need Both?',
@@ -415,7 +304,7 @@ const article3 = {
   readTime: '6 min read',
   category: 'Tax Forms',
   image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&h=600&fit=crop',
-  metaDescription: 'NR6 vs Section 216 explained clearly. Learn when to file each form, how they work together, and avoid common mistakes that cost non-resident landlords money.',
+  metaDescription: 'NR6 vs Section 216 explained clearly. Learn when to file each form, how they work together, and avoid common mistakes.',
   content: (
     <>
       <p className="text-xl text-muted leading-relaxed mb-8">
@@ -447,35 +336,6 @@ const article3 = {
             <li>• Calculates real tax liability</li>
             <li>• Results in refund or amount owing</li>
           </ul>
-        </div>
-      </div>
-
-      <h2>The Timeline</h2>
-      <div className="bg-gray-50 rounded-xl p-6 my-8">
-        <div className="space-y-6">
-          <div className="flex items-center gap-4">
-            <div className="w-28 text-sm font-semibold text-primary text-right">Dec 31, 2025</div>
-            <div className="w-4 h-4 bg-primary rounded-full"></div>
-            <div className="flex-1 bg-blue-100 p-3 rounded-lg">
-              <p className="font-medium">File NR6 for 2026</p>
-              <p className="text-sm text-muted">With estimated income and expenses</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="w-28 text-sm text-muted text-right">Jan–Dec 2026</div>
-            <div className="w-4 h-4 bg-gray-300 rounded-full"></div>
-            <div className="flex-1 bg-gray-100 p-3 rounded-lg">
-              <p className="font-medium text-muted">Collect rent, pay reduced withholding</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4">
-            <div className="w-28 text-sm font-semibold text-green-600 text-right">June 30, 2027</div>
-            <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-            <div className="flex-1 bg-green-100 p-3 rounded-lg">
-              <p className="font-medium">File Section 216 for 2026</p>
-              <p className="text-sm text-muted">With actual income and expenses</p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -542,42 +402,10 @@ const article3 = {
             <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-foreground">If you don't file NR6:</p>
-              <p className="text-muted text-sm mt-1">You can still file Section 216 to claim a refund of excess withholding. But you'll have overpaid all year and wait months for the refund.</p>
+              <p className="text-muted text-sm mt-1">You can still file Section 216 to claim a refund of excess withholding. But you'll have overpaid all year.</p>
             </div>
           </div>
         </div>
-      </div>
-
-      <h2>Common Mistakes</h2>
-
-      <div className="space-y-4 my-6">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-5">
-          <p className="font-semibold text-red-800 mb-2">❌ Filing NR6 but forgetting Section 216</p>
-          <p className="text-red-700 text-sm">CRA will flag this. Your future NR6 applications may be denied. Always complete the cycle.</p>
-        </div>
-        <div className="bg-red-50 border border-red-200 rounded-lg p-5">
-          <p className="font-semibold text-red-800 mb-2">❌ Thinking Section 216 is optional</p>
-          <p className="text-red-700 text-sm">If you filed NR6, Section 216 is mandatory. The "elective" part is whether to file the whole NR6/216 system—but once you start, you must finish.</p>
-        </div>
-        <div className="bg-red-50 border border-red-200 rounded-lg p-5">
-          <p className="font-semibold text-red-800 mb-2">❌ Mixing up the deadlines</p>
-          <p className="text-red-700 text-sm">NR6: before rent. Section 216: June 30 after year ends. Confusing these causes either missed withholding reduction or late filing penalties.</p>
-        </div>
-      </div>
-
-      <h2>A Real Example</h2>
-      <p>Let's follow a landlord through the full cycle:</p>
-
-      <div className="bg-gray-50 rounded-xl p-6 my-8">
-        <p className="font-semibold mb-4">Sarah owns a condo in Vancouver, lives in Seattle</p>
-        <ul className="space-y-3 text-sm">
-          <li><strong>Dec 2025:</strong> Files NR6 for 2026, estimating $30,000 rent and $15,000 expenses</li>
-          <li><strong>Feb 2026:</strong> NR6 approved. Property manager now withholds 25% of $15,000 net = $312.50/month instead of $625/month on gross</li>
-          <li><strong>2026:</strong> Collects rent all year, saves ~$3,750 in cash flow vs. no NR6</li>
-          <li><strong>Jan 2027:</strong> Tallies actual income ($32,000) and expenses ($14,000)</li>
-          <li><strong>April 2027:</strong> Files Section 216 showing actual net income of $18,000</li>
-          <li><strong>June 2027:</strong> CRA reconciles: withheld $3,750, owes tax on $18,000 = $4,500. Sarah owes $750 more (small adjustment)</li>
-        </ul>
       </div>
 
       <h2>The Bottom Line</h2>
@@ -589,7 +417,7 @@ const article3 = {
 };
 
 // =============================================================================
-// ARTICLE 4: Non-Resident Rental Income Tax Canada
+// ARTICLE 4: Non-Resident Rental Income Tax Canada - NEW
 // =============================================================================
 const article4 = {
   title: 'How Much Tax Does a Non-Resident Pay on Rental Income in Canada?',
@@ -602,12 +430,12 @@ const article4 = {
   content: (
     <>
       <p className="text-xl text-muted leading-relaxed mb-8">
-        If you're a non-resident earning rental income from Canadian property, your first question is probably: <em>"How much tax do I actually owe?"</em> The answer isn't as straightforward as a single percentage. Here's the complete breakdown.
+        If you're a non-resident earning rental income from Canadian property, your first question is probably: <em>"How much tax do I actually owe?"</em> The answer isn't as straightforward as a single percentage.
       </p>
 
       <h2>The Default: 25% Withholding Tax</h2>
       <p>
-        Let's start with what happens if you do nothing special. Under Canada's Income Tax Act, rental payments to non-residents are subject to a <strong>25% withholding tax on gross rent</strong>.
+        Under Canada's Income Tax Act, rental payments to non-residents are subject to a <strong>25% withholding tax on gross rent</strong>.
       </p>
 
       <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg my-6">
@@ -615,28 +443,14 @@ const article4 = {
           <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
           <div>
             <p className="font-semibold text-red-800 mb-2">The 25% Gross Problem</p>
-            <p className="text-red-700">"Gross" means <strong>before any expenses</strong>. Mortgage interest, property tax, repairs, insurance—none of it matters. CRA takes 25% off the top.</p>
+            <p className="text-red-700">"Gross" means <strong>before any expenses</strong>. Mortgage interest, property tax, repairs—none of it matters. CRA takes 25% off the top.</p>
           </div>
         </div>
       </div>
 
-      <p>Here's what that looks like:</p>
-
-      <div className="bg-gray-50 rounded-xl p-6 my-6">
-        <div className="grid grid-cols-2 gap-4 text-sm">
-          <div className="text-muted">Monthly rent collected:</div>
-          <div className="font-medium text-right">$3,000</div>
-          <div className="text-muted">25% withholding:</div>
-          <div className="font-medium text-right text-red-600">-$750</div>
-          <div className="text-muted border-t pt-2">Amount you receive:</div>
-          <div className="font-bold text-right border-t pt-2">$2,250</div>
-        </div>
-        <p className="text-sm text-muted mt-4">That's $9,000/year going to CRA, regardless of your expenses.</p>
-      </div>
-
       <h2>But That's Not Your "Real" Tax Rate</h2>
       <p>
-        Here's where it gets interesting. The 25% withholding is essentially a <strong>prepayment</strong>, not necessarily your final tax bill. Canada actually taxes non-residents on rental income using the same graduated rates as residents—IF you file the right forms.
+        The 25% withholding is essentially a <strong>prepayment</strong>, not necessarily your final tax bill. Canada actually taxes non-residents on rental income using graduated rates—IF you file the right forms.
       </p>
 
       <h3>Canada's Tax Rates on Net Rental Income</h3>
@@ -675,69 +489,7 @@ const article4 = {
         </table>
       </div>
 
-      <p>
-        <strong>Important:</strong> Non-residents don't get the basic personal amount ($15,705 in 2026) that residents do. Your first dollar of net income is taxed at 15%.
-      </p>
-
-      <h2>The Two Paths: Gross vs. Net Taxation</h2>
-
-      <div className="grid md:grid-cols-2 gap-6 my-8">
-        <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6">
-          <h4 className="font-bold text-red-800 mb-3">Path 1: Do Nothing</h4>
-          <ul className="text-sm space-y-2 text-red-700">
-            <li>• 25% withheld on gross rent</li>
-            <li>• No forms to file</li>
-            <li>• No deductions allowed</li>
-            <li>• Simple, but expensive</li>
-          </ul>
-          <div className="mt-4 pt-4 border-t border-red-200">
-            <p className="text-xs text-red-600">Best for: Properties with minimal expenses (rare)</p>
-          </div>
-        </div>
-        <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
-          <h4 className="font-bold text-green-800 mb-3">Path 2: File NR6 + Section 216</h4>
-          <ul className="text-sm space-y-2 text-green-700">
-            <li>• Reduced withholding on net income</li>
-            <li>• Deduct all eligible expenses</li>
-            <li>• Pay graduated rates (15-33%)</li>
-            <li>• More work, but saves thousands</li>
-          </ul>
-          <div className="mt-4 pt-4 border-t border-green-200">
-            <p className="text-xs text-green-600">Best for: Anyone with significant expenses (most landlords)</p>
-          </div>
-        </div>
-      </div>
-
-      <h2>What Expenses Can You Deduct?</h2>
-      <p>When you file under Section 216 (and use NR6 for reduced withholding), you can deduct:</p>
-
-      <div className="grid md:grid-cols-2 gap-4 my-6">
-        <div className="bg-blue-50 p-5 rounded-lg">
-          <h4 className="font-semibold text-foreground mb-3">Common Deductions</h4>
-          <ul className="text-sm text-muted space-y-1">
-            <li>✓ Mortgage interest (not principal)</li>
-            <li>✓ Property taxes</li>
-            <li>✓ Property insurance</li>
-            <li>✓ Condo/HOA fees</li>
-            <li>✓ Property management fees</li>
-            <li>✓ Utilities (if landlord pays)</li>
-          </ul>
-        </div>
-        <div className="bg-blue-50 p-5 rounded-lg">
-          <h4 className="font-semibold text-foreground mb-3">Often Overlooked</h4>
-          <ul className="text-sm text-muted space-y-1">
-            <li>✓ Repairs and maintenance</li>
-            <li>✓ Advertising for tenants</li>
-            <li>✓ Legal fees (tenant issues)</li>
-            <li>✓ Accounting/tax prep fees</li>
-            <li>✓ Travel to property (limited)</li>
-            <li>✓ Capital cost allowance (CCA)</li>
-          </ul>
-        </div>
-      </div>
-
       <h2>Real Example: The Math</h2>
-      <p>Let's see how this works with actual numbers:</p>
 
       <div className="bg-gray-50 rounded-xl p-6 my-8">
         <h4 className="font-semibold mb-4">Toronto condo, owner lives in Hong Kong</h4>
@@ -786,63 +538,659 @@ const article4 = {
         </div>
       </div>
 
-      <h2>What About Provincial Tax?</h2>
+      <h2>The Bottom Line</h2>
       <p>
-        Non-residents pay federal tax only—no provincial tax on rental income. This is actually an advantage; residents pay both federal (15-33%) and provincial (varies by province, roughly 5-21%).
+        As a non-resident, you'll pay somewhere between 15-33% on your net Canadian rental income—much less than the default 25% of gross. The key is filing NR6 and Section 216.
+      </p>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 5: NR6 for Airbnb Hosts - ORIGINAL
+// =============================================================================
+const article5 = {
+  title: 'Can Airbnb Hosts File NR6? Everything You Need to Know',
+  excerpt: 'If you own a short-term rental in Canada and live abroad, you might be wondering if NR6 applies to you. The answer could save you thousands.',
+  date: '2026-01-15',
+  readTime: '6 min read',
+  category: 'Short-Term Rentals',
+  image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&h=600&fit=crop',
+  metaDescription: 'Can Airbnb and VRBO hosts file NR6? Yes! Learn how short-term rental income qualifies and how to save thousands on Canadian withholding tax.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        If you're a non-resident who owns an Airbnb or vacation rental in Canada, you're probably familiar with the 25% withholding tax on your gross rental income. But here's the good news: <strong>yes, most Airbnb hosts can file an NR6</strong>—and it could save you thousands every year.
       </p>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 my-6">
-        <p className="text-sm text-blue-800">
-          <strong>Note:</strong> You still pay provincial land transfer tax when buying, and property tax annually. But income tax is federal only.
-        </p>
+      <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8">
+        <div className="flex items-start gap-3">
+          <Lightbulb className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-green-800 mb-1">The Bottom Line</p>
+            <p className="text-green-700">Most individual Airbnb hosts qualify for NR6. If you're simply renting out your property without providing hotel-like services, you're likely eligible.</p>
+          </div>
+        </div>
       </div>
 
-      <h2>Tax Treaties: Country-Specific Rules</h2>
+      <h2>The Key Question: Rental Income vs. Business Income</h2>
       <p>
-        Canada has tax treaties with many countries that may affect your situation. For example, the Canada-US treaty allows US residents to claim a Foreign Tax Credit for Canadian taxes paid. Similar provisions exist for the UK, Australia, and many other countries.
+        CRA draws an important distinction between <em>rental income</em> and <em>business income</em>. NR6 applies to rental income—so understanding this difference is crucial.
       </p>
       <p>
-        The treaty doesn't reduce your Canadian tax—it helps you avoid double taxation in your home country. Consult a cross-border tax specialist for your specific situation.
+        <strong>Your Airbnb income is typically considered rental income if you:</strong>
+      </p>
+      <ul className="space-y-2 my-6">
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Provide basic accommodation (furnished or unfurnished)</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Offer standard amenities (WiFi, kitchen access, linens)</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Use a property manager or self-manage remotely</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Have cleaning between guests (but not daily housekeeping)</span>
+        </li>
+      </ul>
+
+      <p>
+        <strong>It may be considered business income if you:</strong>
+      </p>
+      <ul className="space-y-2 my-6">
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Provide daily housekeeping or room service</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Offer meals, catering, or food service</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Run guided tours or entertainment activities</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Operate more like a hotel or B&B with extensive services</span>
+        </li>
+      </ul>
+
+      <h2>Real Numbers: How Much Can Airbnb Hosts Save?</h2>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 className="font-semibold text-foreground mb-3">Your Annual Numbers</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex justify-between"><span className="text-muted">Gross Airbnb income:</span> <span className="font-medium">$48,000</span></li>
+              <li className="flex justify-between"><span className="text-muted">Airbnb fees (3%):</span> <span className="font-medium">-$1,440</span></li>
+              <li className="flex justify-between"><span className="text-muted">Cleaning costs:</span> <span className="font-medium">-$4,800</span></li>
+              <li className="flex justify-between"><span className="text-muted">Mortgage interest:</span> <span className="font-medium">-$12,000</span></li>
+              <li className="flex justify-between"><span className="text-muted">Property tax:</span> <span className="font-medium">-$4,000</span></li>
+              <li className="flex justify-between"><span className="text-muted">Insurance & condo fees:</span> <span className="font-medium">-$6,000</span></li>
+              <li className="flex justify-between border-t pt-2 mt-2"><span className="font-medium">Net income:</span> <span className="font-bold text-primary">$19,760</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold text-foreground mb-3">Tax Comparison</h4>
+            <div className="space-y-4">
+              <div className="bg-red-50 p-4 rounded-lg">
+                <p className="text-sm text-red-700 mb-1">Without NR6</p>
+                <p className="text-2xl font-bold text-red-600">$12,000</p>
+                <p className="text-xs text-red-600">25% × $48,000 gross</p>
+              </div>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700 mb-1">With NR6</p>
+                <p className="text-2xl font-bold text-green-600">$4,940</p>
+                <p className="text-xs text-green-600">25% × $19,760 net</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center mt-6 pt-6 border-t">
+          <p className="text-muted mb-1">Your Annual Savings</p>
+          <p className="text-4xl font-bold text-primary">$7,060</p>
+        </div>
+      </div>
+
+      <h2>How to Get Started</h2>
+      <p>
+        Filing NR6 for your Airbnb is straightforward. You'll need your property details, rental income estimates, and expense projections. Our online form takes about 5 minutes to complete.
+      </p>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 6: NR6 for US Residents - ORIGINAL
+// =============================================================================
+const article6 = {
+  title: 'American Landlords in Canada: Your Complete NR6 Guide',
+  excerpt: 'Own Canadian property but live in the US? Here\'s how to navigate the cross-border tax implications and keep more of your rental income.',
+  date: '2026-01-10',
+  readTime: '8 min read',
+  category: 'Cross-Border',
+  image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop',
+  metaDescription: 'Complete NR6 guide for Americans with Canadian rental property. Understand cross-border tax, Foreign Tax Credit, and how to avoid double taxation.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        As a US resident with Canadian rental property, you're dealing with two tax authorities: the CRA in Canada and the IRS at home. The good news? With proper planning, you can minimize your tax burden on both sides of the border.
       </p>
 
-      <h2>Summary: What You Actually Pay</h2>
+      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-8">
+        <div className="flex items-start gap-3">
+          <Lightbulb className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-blue-800 mb-1">Key Insight</p>
+            <p className="text-blue-700">The Canada-US Tax Treaty prevents double taxation. Tax paid to Canada can generally be claimed as a Foreign Tax Credit on your US return.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>How Cross-Border Rental Taxes Work</h2>
+      <p>When you earn rental income from Canadian property as a US person:</p>
+
+      <ol className="space-y-4 my-6">
+        <li className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+          <div>
+            <p className="font-semibold">Canada taxes the income first</p>
+            <p className="text-muted text-sm">As the "source country," Canada has the right to tax rental income from Canadian property.</p>
+          </div>
+        </li>
+        <li className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+          <div>
+            <p className="font-semibold">US taxes your worldwide income</p>
+            <p className="text-muted text-sm">As a US person, you must report all income—including Canadian rental income—on your US tax return.</p>
+          </div>
+        </li>
+        <li className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+          <div>
+            <p className="font-semibold">Foreign Tax Credit prevents double-dipping</p>
+            <p className="text-muted text-sm">You can claim a credit on your US return for taxes paid to Canada.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h2>Why NR6 Matters Even More for Americans</h2>
+      <p>
+        Without NR6, Canada withholds 25% of your <em>gross</em> rent. This creates a cash flow problem and complicates your Foreign Tax Credit calculation.
+      </p>
+
+      <h2>US Tax Obligations to Remember</h2>
+
+      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-6">
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <span><strong>Report Canadian income on your US tax return</strong> (Schedule E)</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <span><strong>File FBAR (FinCEN 114)</strong> if Canadian bank accounts exceed $10,000</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <span><strong>File Form 8938 (FATCA)</strong> if you meet the asset thresholds</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <span><strong>Claim Foreign Tax Credit</strong> (Form 1116)</span>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Cross-border taxes are complex. We recommend working with a tax professional familiar with Canada-US issues, while we handle the NR6 side of things.
+      </p>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 7: Common NR6 Mistakes - ORIGINAL
+// =============================================================================
+const article7 = {
+  title: '5 Costly NR6 Mistakes That Could Cost You Thousands',
+  excerpt: 'These common filing errors lead to rejected applications, missed savings, and CRA headaches. Here\'s how to avoid every single one.',
+  date: '2026-01-05',
+  readTime: '5 min read',
+  category: 'Mistakes to Avoid',
+  image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=600&fit=crop',
+  metaDescription: '5 common NR6 filing mistakes that cost landlords thousands. Learn what errors to avoid and how to file correctly the first time.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        Filing an NR6 can save you 50-75% on your Canadian withholding tax. But mistakes can delay your application, reduce your savings, or even result in penalties.
+      </p>
+
+      <div className="space-y-8">
+        <div className="bg-white border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl font-bold text-red-600">1</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Filing Too Late in the Year</h3>
+              <p className="text-muted text-sm mb-4">
+                NR6 only applies <em>going forward</em>. If you file in March, January and February are still at 25% gross.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700">
+                  <strong>The Fix:</strong> File by December 31st for the following year.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl font-bold text-red-600">2</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Underestimating Deductible Expenses</h3>
+              <p className="text-muted text-sm mb-4">
+                If you forget expenses, your net income estimate is too high—and you'll have more tax withheld than necessary.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700">
+                  <strong>The Fix:</strong> Include ALL eligible expenses: mortgage interest, property taxes, insurance, condo fees, repairs, management fees.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl font-bold text-red-600">3</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Not Having a Canadian Agent</h3>
+              <p className="text-muted text-sm mb-4">
+                CRA requires every NR6 filer to have a Canadian resident agent. No agent = no NR6 approval.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700">
+                  <strong>The Fix:</strong> Use a professional service like NR6.ca. Our $999 CAD fee includes Canadian agent services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl font-bold text-red-600">4</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Forgetting the Section 216 Return</h3>
+              <p className="text-muted text-sm mb-4">
+                Filing NR6 is a commitment to file Section 216 by June 30th. Miss it, and CRA can revoke your NR6.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700">
+                  <strong>The Fix:</strong> Mark June 30th on your calendar. We send reminders to all clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white border-2 border-red-200 rounded-xl p-6">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <span className="text-2xl font-bold text-red-600">5</span>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-foreground mb-2">Simple Data Entry Errors</h3>
+              <p className="text-muted text-sm mb-4">
+                Wrong property address, incorrect ownership percentage, math errors. These delay your application.
+              </p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <p className="text-sm text-green-700">
+                  <strong>The Fix:</strong> Double-check everything. At NR6.ca, our team reviews every submission before filing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 8: Canadian Agent Requirement - ORIGINAL
+// =============================================================================
+const article8 = {
+  title: 'Why CRA Requires a Canadian Agent (And How to Get One)',
+  excerpt: 'No Canadian agent means no NR6 approval. Learn what agents do, why they\'re mandatory, and the easiest way to get one.',
+  date: '2025-12-20',
+  readTime: '4 min read',
+  category: 'Requirements',
+  image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+  metaDescription: 'CRA requires a Canadian agent for NR6 filing. Learn what agents do, who can be your agent, and the easiest way to get one.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        "Do I really need a Canadian agent to file NR6?" The short answer is <strong>yes, absolutely</strong>. It's a CRA requirement with no exceptions.
+      </p>
+
+      <h2>What is a Canadian Agent?</h2>
+      <p>
+        A Canadian agent is a resident of Canada who acts on your behalf for tax purposes. They sign the NR6 form alongside you and take on specific legal responsibilities.
+      </p>
+
+      <h2>Why Does CRA Require One?</h2>
+      <ul className="space-y-3 my-6">
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span><strong>You're outside Canada</strong> — CRA can't easily reach you</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span><strong>Someone needs to be accountable</strong> — The agent ensures compliance</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span><strong>Communication needs a local point</strong> — CRA sends correspondence to Canada</span>
+        </li>
+      </ul>
+
+      <h2>What Does an Agent Actually Do?</h2>
+      <div className="bg-gray-50 rounded-xl p-6 my-8">
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">✓</div>
+            <span>Signs the NR6 form as your agent</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">✓</div>
+            <span>Receives and responds to CRA correspondence</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">✓</div>
+            <span>Ensures proper withholding amounts are calculated</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">✓</div>
+            <span>Takes on certain legal obligations to CRA</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Your Options for Getting an Agent</h2>
+      <div className="grid md:grid-cols-3 gap-4 my-8">
+        <div className="bg-white border border-border rounded-lg p-5">
+          <h4 className="font-semibold mb-2">Property Manager</h4>
+          <p className="text-sm text-muted">If Canadian-based, they may agree to act as agent.</p>
+        </div>
+        <div className="bg-white border border-border rounded-lg p-5">
+          <h4 className="font-semibold mb-2">Friend or Family</h4>
+          <p className="text-sm text-muted">A Canadian resident you trust. But they take on legal responsibility.</p>
+        </div>
+        <div className="bg-primary text-white rounded-lg p-5">
+          <h4 className="font-semibold mb-2">Professional Service ★</h4>
+          <p className="text-sm text-blue-100">NR6.ca includes agent services in our flat fee. Simplest option.</p>
+        </div>
+      </div>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 9: Buying Canadian Property - ORIGINAL
+// =============================================================================
+const article9 = {
+  title: 'Buying Canadian Real Estate as a Non-Resident: Tax Planning 101',
+  excerpt: 'Before you invest, understand the tax implications. From purchase to rental to sale—here\'s what non-residents need to know.',
+  date: '2025-12-15',
+  readTime: '7 min read',
+  category: 'Investment',
+  image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop',
+  metaDescription: 'Tax guide for non-residents buying Canadian real estate. Learn about purchase taxes, rental income withholding, and capital gains on sale.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        Canadian real estate has long attracted international investors. But before you sign that purchase agreement, understanding the tax landscape can save you from costly surprises.
+      </p>
+
+      <h2>The Purchase Phase</h2>
+      <p>When buying property in Canada as a non-resident, you'll encounter:</p>
+
+      <div className="grid md:grid-cols-2 gap-4 my-6">
+        <div className="bg-blue-50 p-5 rounded-lg">
+          <h4 className="font-semibold text-foreground mb-2">Land Transfer Tax</h4>
+          <p className="text-sm text-muted">Varies by province. Ontario and Toronto have additional municipal taxes.</p>
+        </div>
+        <div className="bg-blue-50 p-5 rounded-lg">
+          <h4 className="font-semibold text-foreground mb-2">Non-Resident Speculation Tax</h4>
+          <p className="text-sm text-muted">25% tax in Ontario for foreign buyers (with some exemptions).</p>
+        </div>
+      </div>
+
+      <h2>The Rental Phase: Where NR6 Comes In</h2>
+      <p>Once you start earning rental income, the 25% withholding tax kicks in:</p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-6">
+        <div className="space-y-4">
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">!</div>
+            <div>
+              <p className="font-semibold">Without NR6</p>
+              <p className="text-sm text-muted">Your property manager must withhold 25% of gross rent monthly.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">✓</div>
+            <div>
+              <p className="font-semibold">With NR6</p>
+              <p className="text-sm text-muted">Withholding is based on net income after expenses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>The Sale Phase</h2>
+      <p>When you sell Canadian property as a non-resident:</p>
+
+      <ul className="space-y-3 my-6">
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span><strong>25% withholding</strong> on sale proceeds by the buyer's lawyer</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span><strong>Certificate of Compliance</strong> (Section 116) required</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span><strong>Capital gains tax</strong> on the profit from sale</span>
+        </li>
+      </ul>
+
+      <h2>Planning for Success</h2>
+      <ol className="space-y-2 my-6 list-decimal list-inside">
+        <li>Consult a cross-border tax professional</li>
+        <li>Understand all applicable taxes before buying</li>
+        <li>Plan to file NR6 from day one of rental income</li>
+        <li>Set up proper Canadian banking</li>
+        <li>Consider tax implications in your home country</li>
+      </ol>
+    </>
+  ),
+};
+
+// =============================================================================
+// ARTICLE 10: Filed NR6 What's Next - NEW (replaces duplicate)
+// =============================================================================
+const article10 = {
+  title: 'I Filed My NR6—Now What? Your Complete Next Steps Guide',
+  excerpt: 'You submitted your NR6. Great! But the process isn\'t over. Here\'s exactly what happens next and what you need to do to stay compliant.',
+  date: '2025-12-10',
+  readTime: '5 min read',
+  category: 'After Filing',
+  image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=600&fit=crop',
+  metaDescription: 'Filed your NR6? Learn what happens next: CRA processing, approval timeline, what to tell your property manager, and Section 216 requirements.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        You've submitted your NR6 form. Congratulations—that's the first step toward keeping more of your rental income! But your obligations don't end there. Here's everything that happens next.
+      </p>
+
+      <h2>The Timeline After Filing</h2>
+      
+      <div className="bg-gray-50 rounded-xl p-6 my-8">
+        <div className="space-y-6">
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+            <div>
+              <p className="font-semibold">Week 1-2: CRA Receives Your NR6</p>
+              <p className="text-sm text-muted">Your form enters the processing queue. No action needed from you.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+            <div>
+              <p className="font-semibold">Week 3-6: CRA Reviews</p>
+              <p className="text-sm text-muted">CRA verifies your information. They may contact your agent if questions arise.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4">
+            <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+            <div>
+              <p className="font-semibold">Week 4-8: Approval Letter</p>
+              <p className="text-sm text-muted">You receive written approval with your authorized withholding rate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>What to Do When You Get Approved</h2>
+
+      <div className="space-y-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold text-foreground">Send approval to your property manager</p>
+              <p className="text-muted text-sm mt-1">They need this to know your new withholding rate. Forward the CRA letter immediately.</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold text-foreground">Save a copy for your records</p>
+              <p className="text-muted text-sm mt-1">You'll need this when filing your Section 216 return.</p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <div className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold text-foreground">Set a calendar reminder for Section 216</p>
+              <p className="text-muted text-sm mt-1">Due June 30 of the following year. Don't forget this—it's mandatory.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Your Ongoing Obligations</h2>
 
       <div className="overflow-x-auto my-8">
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b-2 border-primary bg-blue-50">
-              <th className="text-left py-3 px-4 font-semibold">Scenario</th>
-              <th className="text-left py-3 px-4 font-semibold">Effective Tax Rate</th>
-              <th className="text-left py-3 px-4 font-semibold">Forms Required</th>
+              <th className="text-left py-3 px-4 font-semibold">Obligation</th>
+              <th className="text-left py-3 px-4 font-semibold">Deadline</th>
+              <th className="text-left py-3 px-4 font-semibold">What Happens If You Miss It</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b">
-              <td className="py-3 px-4 font-medium">No election (default)</td>
-              <td className="py-3 px-4">25% of gross</td>
-              <td className="py-3 px-4">None</td>
+              <td className="py-3 px-4">Monthly withholding remittance</td>
+              <td className="py-3 px-4">15th of following month</td>
+              <td className="py-3 px-4 text-red-600">Penalties and interest</td>
             </tr>
             <tr className="border-b bg-gray-50">
-              <td className="py-3 px-4 font-medium">Section 216 only</td>
-              <td className="py-3 px-4">15-33% of net*</td>
-              <td className="py-3 px-4">Section 216 (after year)</td>
+              <td className="py-3 px-4">File Section 216 return</td>
+              <td className="py-3 px-4 font-medium">June 30 next year</td>
+              <td className="py-3 px-4 text-red-600">NR6 may be revoked for future years</td>
             </tr>
-            <tr className="bg-green-50">
-              <td className="py-3 px-4 font-medium">NR6 + Section 216 (optimal)</td>
-              <td className="py-3 px-4 text-green-600 font-medium">15-33% of net*</td>
-              <td className="py-3 px-4">NR6 (before) + Section 216 (after)</td>
+            <tr className="border-b">
+              <td className="py-3 px-4">Renew NR6 for next year</td>
+              <td className="py-3 px-4">December 31</td>
+              <td className="py-3 px-4 text-red-600">Back to 25% gross withholding</td>
             </tr>
           </tbody>
         </table>
-        <p className="text-xs text-muted mt-2">*Rate depends on net income amount. Most landlords fall in the 15-20.5% brackets.</p>
       </div>
 
-      <h2>The Bottom Line</h2>
+      <h2>The Section 216 Return</h2>
       <p>
-        As a non-resident, you'll pay somewhere between 15-33% on your net Canadian rental income—much less than the default 25% of gross. The key is filing NR6 (for reduced withholding) and Section 216 (for the proper tax calculation).
+        This is the most important follow-up. When you filed NR6, you made a <strong>legal promise</strong> to file a Section 216 return. This return:
       </p>
+      <ul className="space-y-2 my-6">
+        <li className="flex items-start gap-3">
+          <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span>Reports your <strong>actual</strong> rental income and expenses</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span>Calculates your <strong>true</strong> tax liability</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <span>Results in a <strong>refund</strong> (if you overpaid) or <strong>balance owing</strong> (if you underpaid)</span>
+        </li>
+      </ul>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg my-6">
+        <p className="font-semibold text-yellow-800 mb-2">Don't Skip Section 216</p>
+        <p className="text-yellow-700 text-sm">
+          If you filed NR6 but don't file Section 216, CRA can deny your future NR6 applications. You'll be stuck with 25% gross withholding—permanently.
+        </p>
+      </div>
+
+      <h2>The Annual Cycle</h2>
+      <p>Once you're in the NR6 system, here's your yearly routine:</p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-8">
+        <ul className="space-y-4">
+          <li className="flex items-start gap-3">
+            <span className="font-semibold text-primary w-24">Jan-Dec:</span>
+            <span>Collect rent, pay reduced withholding</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="font-semibold text-primary w-24">By June 30:</span>
+            <span>File Section 216 for the prior year</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="font-semibold text-primary w-24">By Dec 31:</span>
+            <span>File NR6 for the upcoming year</span>
+          </li>
+        </ul>
+      </div>
+
       <p>
-        For most landlords with typical expenses, the effective rate ends up being 15-20% of net income, which works out to roughly 5-10% of gross income. Compare that to 25% of gross without filing. The savings are substantial.
+        At NR6.ca, we send reminders before each deadline so you never miss a step. That's part of our service.
       </p>
     </>
   ),
@@ -856,6 +1204,12 @@ const blogPosts: Record<string, typeof article1> = {
   'nr6-deadline-missed-penalties-fixes': article2,
   'nr6-vs-section-216-difference': article3,
   'non-resident-rental-income-tax-canada': article4,
+  'nr6-for-airbnb-hosts': article5,
+  'nr6-for-us-residents': article6,
+  'common-nr6-mistakes': article7,
+  'do-you-need-a-canadian-agent': article8,
+  'buying-canadian-property-non-resident': article9,
+  'filed-nr6-whats-next': article10,
 };
 
 // =============================================================================
