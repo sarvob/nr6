@@ -38,7 +38,7 @@ const faqs = [
       },
       {
         question: 'What does the $999 fee include?',
-        answer: 'The $999 CAD flat fee covers everything: NR6 form preparation, submission to CRA, Canadian agent services (required by CRA), withholding calculation assistance, email support, and annual reminders for renewal. There are no hidden fees or hourly charges.',
+        answer: 'The $999 CAD annual fee covers complete tax compliance: NR6 form preparation & submission, monthly remittance calculations (12x/year), NR4 information slip, Section 216 year-end return, Canadian agent services, CRA correspondence handling, year-round email support, and deadline reminders. That\'s 15+ CRA filings and interactions—all for one flat fee with no hidden charges.',
       },
       {
         question: 'How long does the process take?',
@@ -63,7 +63,7 @@ const faqs = [
       },
       {
         question: 'Do I still need to file a Section 216 return?',
-        answer: 'Yes. The NR6 allows for reduced withholding throughout the year, but you\'re still required to file a Section 216 return by June 30th of the following year to report your actual rental income and claim a refund of any excess tax withheld.',
+        answer: 'Yes, and we handle it for you! The Section 216 return is included in our $999 annual package. We prepare and file it by the June 30th deadline to report your actual rental income and reconcile any tax differences.',
       },
       {
         question: 'What if I have multiple properties?',

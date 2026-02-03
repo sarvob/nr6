@@ -3,90 +3,107 @@ import {
   AlertTriangle, 
   FileText, 
   Users, 
-  Calculator,
   CheckCircle,
   ArrowRight,
   Clock,
   Shield,
-  DollarSign
+  Calendar,
+  FileCheck,
+  Headphones,
+  CalendarCheck
 } from 'lucide-react'
 
 const painPoints = [
   {
     icon: AlertTriangle,
-    title: '25% Tax on Gross Rent',
-    description: 'Without NR6, Canada withholds 25% of your gross rental income—even before expenses.',
+    title: 'Multiple CRA Filings Required',
+    description: 'NR6, monthly remittances, NR4 slips, Section 216 returns—miss one and face penalties.',
   },
   {
     icon: FileText,
-    title: 'Confusing CRA Forms',
-    description: 'The NR6 process is complex and error-prone. One mistake can delay your filing for months.',
+    title: 'Complex Compliance Rules',
+    description: 'CRA has strict deadlines and requirements. One mistake can cost you thousands.',
   },
   {
     icon: Users,
     title: 'Need a Canadian Agent',
-    description: 'CRA requires a Canadian resident agent. Finding a trustworthy one is difficult from abroad.',
+    description: 'CRA requires a Canadian resident agent. Finding a trustworthy one from abroad is difficult.',
   },
 ]
 
-const solutions = [
+const services = [
   {
     icon: FileText,
-    title: 'NR6 Preparation',
-    description: 'We prepare your NR6 form accurately with all required information.',
+    title: 'NR6 Form',
+    description: 'Reduce your withholding rate from 25% gross to net income',
+    frequency: 'Annual',
+  },
+  {
+    icon: Calendar,
+    title: 'Monthly Remittances',
+    description: 'We calculate and submit your withholding to CRA every month',
+    frequency: '12x/year',
+  },
+  {
+    icon: FileCheck,
+    title: 'NR4 Information Slip',
+    description: 'Year-end slip showing amounts paid to non-resident',
+    frequency: 'Annual',
   },
   {
     icon: Shield,
-    title: 'CRA Submission',
-    description: 'We submit directly to CRA and handle any follow-up correspondence.',
+    title: 'Section 216 Return',
+    description: 'Your year-end Canadian tax return to reconcile actual tax',
+    frequency: 'Annual',
   },
-  {
-    icon: Users,
-    title: 'Agent Services',
-    description: 'We act as your Canadian agent—a CRA requirement for non-residents.',
-  },
-  {
-    icon: Clock,
-    title: 'Annual Reminders',
-    description: 'We remind you before deadlines so you never miss a filing.',
-  },
+]
+
+const included = [
+  'NR6 form preparation & CRA submission',
+  'Monthly remittance calculations (12x/year)',
+  'NR4 information slip preparation',
+  'Section 216 year-end tax return',
+  'Canadian agent services (required by CRA)',
+  'CRA correspondence handling',
+  'Year-round email support',
+  'Annual renewal reminders',
 ]
 
 const howItWorks = [
   {
     step: 1,
-    title: 'Enter Your Details',
-    description: 'Complete our simple 5-minute form with your property and rental information.',
+    title: 'Sign Up',
+    description: 'Complete our simple form with your property and rental details. Takes about 5 minutes.',
   },
   {
     step: 2,
-    title: 'We Prepare Your NR6',
-    description: 'Our team reviews your information and prepares your NR6 form.',
+    title: 'We Handle Everything',
+    description: 'We file your NR6, manage monthly remittances, and handle all CRA communications.',
   },
   {
     step: 3,
-    title: 'We File With CRA',
-    description: 'We submit your NR6 to CRA and act as your Canadian agent.',
+    title: 'Year-End Filing',
+    description: 'We prepare your NR4 slip and Section 216 return to reconcile your taxes.',
   },
   {
     step: 4,
-    title: 'Pay Tax on Net Income',
-    description: 'With NR6 approved, you pay tax on net income instead of gross.',
+    title: 'Stay Compliant',
+    description: 'Relax knowing your Canadian rental taxes are handled. We remind you before renewals.',
   },
 ]
 
 const faqs = [
   {
-    question: 'What is the NR6 form?',
-    answer: 'The NR6 allows non-resident landlords to pay tax on net rental income instead of 25% on gross rent.',
+    question: 'What\'s included in the $999?',
+    answer: 'Everything: NR6 filing, 12 monthly remittances, NR4 slip, Section 216 return, Canadian agent services, and year-round support. No hidden fees.',
   },
   {
-    question: 'How much can I save?',
-    answer: 'Most landlords save 50-75% on their withholding tax by filing NR6. Our calculator shows your estimated savings.',
+    question: 'Is this just for NR6?',
+    answer: 'No—we handle your complete non-resident rental tax compliance. That\'s 15+ CRA filings and interactions per year, all for one flat fee.',
   },
   {
-    question: 'How long does the process take?',
-    answer: 'Our intake form takes about 5-7 minutes. CRA typically processes NR6 forms within 4-8 weeks.',
+    question: 'Why do I need all these filings?',
+    answer: 'CRA requires NR6 to reduce withholding, monthly remittances to stay compliant, NR4 for reporting, and Section 216 as your year-end return. We handle all of it.',
   },
 ]
 
@@ -96,29 +113,58 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-20 lg:py-28">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Stop Overpaying on Canadian Rental Income Tax
-            </h1>
-            <p className="text-xl text-muted mb-4">
-              Non-resident landlord? Without NR6, Canada withholds 25% of your <em>gross</em> rent.
-              With NR6, you pay tax only on <em>net</em> income—saving thousands annually.
-            </p>
-            <div className="flex items-center justify-center gap-2 text-2xl font-bold text-primary mb-8">
-              <DollarSign className="w-8 h-8" />
-              <span>$999 CAD Flat Fee Per Property</span>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <Shield className="w-4 h-4" />
+              Complete Tax Compliance for Non-Resident Landlords
             </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+              Your Canadian Rental Taxes, Handled
+            </h1>
+            <p className="text-xl text-muted mb-8 max-w-2xl mx-auto">
+              Stop worrying about CRA deadlines and compliance. We manage every filing—NR6, monthly remittances, NR4, and Section 216—so you don't have to.
+            </p>
+            
+            {/* Price with context */}
+            <div className="bg-white rounded-2xl shadow-lg p-6 max-w-xl mx-auto mb-8">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <span className="text-4xl md:text-5xl font-bold text-primary">$999</span>
+                <div className="text-left">
+                  <span className="text-muted text-sm block">CAD / property / year</span>
+                  <span className="text-green-600 text-sm font-medium">All filings included</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-sm">
+                <div className="bg-blue-50 rounded-lg p-2">
+                  <div className="font-semibold text-primary">NR6</div>
+                  <div className="text-muted text-xs">Annual</div>
+                </div>
+                <div className="bg-blue-50 rounded-lg p-2">
+                  <div className="font-semibold text-primary">Remittances</div>
+                  <div className="text-muted text-xs">12x/year</div>
+                </div>
+                <div className="bg-blue-50 rounded-lg p-2">
+                  <div className="font-semibold text-primary">NR4</div>
+                  <div className="text-muted text-xs">Annual</div>
+                </div>
+                <div className="bg-blue-50 rounded-lg p-2">
+                  <div className="font-semibold text-primary">T1(216)</div>
+                  <div className="text-muted text-xs">Annual</div>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/start" className="btn-primary text-lg px-8 py-4 inline-flex items-center justify-center gap-2">
-                File My NR6 Now
+                Get Started
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/guides/calculator" className="btn-secondary text-lg px-8 py-4">
-                Calculate My Savings
+              <Link href="/pricing" className="btn-secondary text-lg px-8 py-4">
+                See What's Included
               </Link>
             </div>
             <p className="text-sm text-muted mt-4">
-              Complete the process in under 7 minutes. No account required.
+              Less than $85/month for complete peace of mind
             </p>
           </div>
         </div>
@@ -128,9 +174,9 @@ export default function HomePage() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="container-wide">
           <div className="text-center mb-12">
-            <h2 className="section-heading">The Problem for Non-Resident Landlords</h2>
+            <h2 className="section-heading">Non-Resident Rental Taxes Are Complicated</h2>
             <p className="section-subheading max-w-2xl mx-auto">
-              If you own rental property in Canada but live abroad, the tax system works against you.
+              If you own property in Canada but live abroad, CRA expects multiple filings throughout the year.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -147,65 +193,102 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Solution */}
+      {/* What We Handle */}
       <section className="py-16 lg:py-20 bg-blue-50">
         <div className="container-wide">
           <div className="text-center mb-12">
-            <h2 className="section-heading">How NR6.ca Solves This</h2>
+            <h2 className="section-heading">One Price. Every Filing. All Year.</h2>
             <p className="section-subheading max-w-2xl mx-auto">
-              We handle everything—from NR6 preparation to CRA submission—so you keep more of your rental income.
+              We handle your complete Canadian rental tax compliance—that's 15+ CRA interactions annually.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {solutions.map((solution) => (
-              <div key={solution.title} className="card">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
-                  <solution.icon className="w-6 h-6 text-white" />
+            {services.map((service) => (
+              <div key={service.title} className="card bg-white">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                    <service.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <span className="text-xs font-medium text-primary bg-blue-100 px-2 py-1 rounded">
+                    {service.frequency}
+                  </span>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{solution.title}</h3>
-                <p className="text-muted text-sm">{solution.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{service.title}</h3>
+                <p className="text-muted text-sm">{service.description}</p>
               </div>
             ))}
+          </div>
+          
+          {/* Plus more */}
+          <div className="mt-8 text-center">
+            <div className="inline-flex flex-wrap justify-center gap-4 text-sm">
+              <span className="flex items-center gap-2 bg-white px-4 py-2 rounded-full">
+                <Users className="w-4 h-4 text-primary" />
+                Canadian Agent Services
+              </span>
+              <span className="flex items-center gap-2 bg-white px-4 py-2 rounded-full">
+                <Headphones className="w-4 h-4 text-primary" />
+                Year-Round Support
+              </span>
+              <span className="flex items-center gap-2 bg-white px-4 py-2 rounded-full">
+                <CalendarCheck className="w-4 h-4 text-primary" />
+                Deadline Reminders
+              </span>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Pricing Preview */}
+      {/* Pricing Section */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="container-wide">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="section-heading">Simple, Transparent Pricing</h2>
-            <div className="card mt-8 border-2 border-primary">
-              <div className="text-center">
-                <p className="text-muted uppercase tracking-wide text-sm font-semibold mb-2">
-                  Done-For-You Filing
-                </p>
-                <div className="flex items-center justify-center gap-1 mb-4">
-                  <span className="text-5xl font-bold text-primary">$999</span>
-                  <span className="text-muted">CAD / property / year</span>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="section-heading">Complete Non-Resident Rental Compliance</h2>
+              <p className="section-subheading">
+                Everything you need to stay compliant with CRA. One annual fee. No surprises.
+              </p>
+            </div>
+            
+            <div className="card border-2 border-primary">
+              <div className="md:flex">
+                {/* Left: Price */}
+                <div className="md:w-1/3 text-center pb-6 md:pb-0 md:pr-8 md:border-r border-b md:border-b-0 border-border">
+                  <p className="text-muted uppercase tracking-wide text-sm font-semibold mb-2">
+                    Annual Package
+                  </p>
+                  <div className="flex items-baseline justify-center gap-1 mb-2">
+                    <span className="text-5xl font-bold text-primary">$999</span>
+                    <span className="text-muted">CAD</span>
+                  </div>
+                  <p className="text-muted text-sm">per property, per year</p>
+                  <p className="text-green-600 text-sm font-medium mt-2">
+                    = Less than $85/month
+                  </p>
                 </div>
-                <ul className="text-left max-w-sm mx-auto space-y-3 mb-6">
-                  {[
-                    'Complete NR6 form preparation',
-                    'Direct submission to CRA',
-                    'Canadian agent services included',
-                    'Withholding calculation assistance',
-                    'Email support',
-                    'Annual reminders',
-                  ].map((item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-sm text-muted mb-6">
-                  No hidden fees. No surprises. One flat price.
-                </p>
-                <Link href="/start" className="btn-primary inline-flex items-center gap-2">
-                  Start Filing
+                
+                {/* Right: What's included */}
+                <div className="md:w-2/3 pt-6 md:pt-0 md:pl-8">
+                  <h3 className="font-semibold text-foreground mb-4">Everything Included:</h3>
+                  <ul className="grid md:grid-cols-2 gap-3">
+                    {included.map((item) => (
+                      <li key={item} className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-6 border-t border-border text-center">
+                <Link href="/start" className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-4">
+                  Get Started Now
                   <ArrowRight className="w-5 h-5" />
                 </Link>
+                <p className="text-sm text-muted mt-3">
+                  Secure payment via Stripe. Setup takes about 5 minutes.
+                </p>
               </div>
             </div>
           </div>
@@ -218,7 +301,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="section-heading">How It Works</h2>
             <p className="section-subheading max-w-2xl mx-auto">
-              Four simple steps to start saving on your Canadian rental income tax.
+              Sign up once, and we handle your tax compliance all year long.
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -237,12 +320,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
-            <Link href="/how-it-works" className="text-primary-light hover:text-primary font-semibold inline-flex items-center gap-1">
-              Learn more about our process
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -252,15 +329,15 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted">Properties Filed</p>
+              <p className="text-muted">Properties Managed</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">$2M+</div>
-              <p className="text-muted">Saved for Clients</p>
+              <div className="text-4xl font-bold text-primary mb-2">6,000+</div>
+              <p className="text-muted">CRA Filings Submitted</p>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">98%</div>
-              <p className="text-muted">CRA Approval Rate</p>
+              <div className="text-4xl font-bold text-primary mb-2">100%</div>
+              <p className="text-muted">Compliance Rate</p>
             </div>
           </div>
         </div>
@@ -293,13 +370,13 @@ export default function HomePage() {
       <section className="py-20 bg-primary">
         <div className="container-wide text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Stop Overpaying?
+            Ready for Worry-Free Compliance?
           </h2>
           <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-            Join hundreds of non-resident landlords who save thousands every year with NR6.
+            Join hundreds of non-resident landlords who trust us with their Canadian rental taxes.
           </p>
           <Link href="/start" className="bg-white text-primary px-8 py-4 rounded-md font-semibold text-lg inline-flex items-center gap-2 hover:bg-blue-50 transition-colors">
-            File My NR6 Now
+            Get Started Today
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
