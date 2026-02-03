@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description: 'Professional NR6 form filing service for non-resident landlords in Canada. Save up to 75% on withholding tax. Flat fee of $999 CAD per property.',
   keywords: 'NR6, non-resident landlord, Canada tax, withholding tax, rental income, CRA',
   authors: [{ name: 'NR6.ca' }],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+  },
   openGraph: {
     title: 'NR6.ca - NR6 Filing Service for Non-Resident Landlords',
     description: 'Professional NR6 form filing service. Save thousands on Canadian rental income tax.',
@@ -24,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </head>
       <body className="min-h-screen flex flex-col">
         <a href="#main-content" className="skip-link">
           Skip to main content
