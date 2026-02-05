@@ -1,0 +1,9 @@
+# robots.txt for NR6.ca
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nr6.ca/sitemap.xml
+
+# Block admin pages from indexing
+Disallow: /admin
