@@ -73,9 +73,15 @@
   <!-- Blog -->
   <url>
     <loc>https://nr6.ca/blog</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nr6.ca/blog/who-handles-nr6-withholding</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://nr6.ca/blog/nr6-form-explained-2026-guide</loc>

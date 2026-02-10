@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 const blogPosts = [
   // NEW SEO-FOCUSED ARTICLES
   {
+    slug: 'who-handles-nr6-withholding',
+    title: 'Who Actually Handles NR6 Withholding? (Tenant, Agent, or You)',
+    excerpt: 'One of the most misunderstood parts of NR6: who is responsible for withholding tax? The tenant? Your agent? You? CRA doesn\'t care about confusion—only compliance.',
+    date: '2026-02-09',
+    readTime: '7 min read',
+    category: 'Compliance',
+    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=400&fit=crop',
+  },
+  {
     slug: 'nr6-form-explained-2026-guide',
     title: 'NR6 Form Explained: Who Needs to File It and Why It Matters (2026 Guide)',
     excerpt: 'Everything you need to know about the NR6 form in plain English. Who must file, what happens if you don\'t, and why it could save you thousands.',

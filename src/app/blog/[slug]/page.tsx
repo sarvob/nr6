@@ -4,6 +4,261 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 // =============================================================================
+// ARTICLE 0: Who Handles NR6 Withholding - NEW
+// =============================================================================
+const article0 = {
+  title: 'Who Actually Handles NR6 Withholding? (Tenant, Agent, or You)',
+  excerpt: 'One of the most misunderstood parts of NR6: who is responsible for withholding tax? The tenant? Your agent? You? CRA doesn\'t care about confusion—only compliance.',
+  date: '2026-02-09',
+  readTime: '7 min read',
+  category: 'Compliance',
+  image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=600&fit=crop',
+  metaDescription: 'Who is responsible for NR6 withholding tax in Canada? Learn about tenant vs agent vs owner responsibilities and avoid CRA penalties from confusion.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        If you're a <strong>non-resident renting out a place in Canada</strong>, there's one question almost everyone gets wrong at first: <em>Who is actually supposed to withhold and send tax to CRA?</em>
+      </p>
+
+      <p>Ask around and you'll hear different answers:</p>
+      <ul className="space-y-2 my-6">
+        <li className="flex items-start gap-3">
+          <span className="text-muted">"The tenant does it."</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-muted">"My accountant handles it."</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <span className="text-muted">"The property manager takes care of everything."</span>
+        </li>
+      </ul>
+
+      <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-8">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-red-800 mb-1">The Problem?</p>
+            <p className="text-red-700"><strong>CRA doesn't see it that way.</strong> Misunderstanding this is one of the fastest ways non-residents end up with penalties.</p>
+          </div>
+        </div>
+      </div>
+
+      <p>Let's walk through it properly—no jargon, no scare tactics.</p>
+
+      <h2>The Basic Rule (The One CRA Actually Enforces)</h2>
+      <p>
+        If you're a non-resident earning rental income in Canada, CRA expects <strong>tax to be withheld and sent to them every month</strong>.
+      </p>
+      <p>
+        By default, that amount is <strong>25% of the gross rent</strong>.
+      </p>
+      <p>
+        CRA is not very emotional about <em>who</em> does this. They care about <strong>one thing only</strong>:
+      </p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-6">
+        <p className="text-xl font-semibold text-blue-800 text-center">Did the correct amount arrive, on time?</p>
+      </div>
+
+      <p>That's it.</p>
+
+      <h2>So… Who Can Do the Withholding?</h2>
+      <p>There are <strong>three common setups</strong>, and all of them are technically allowed.</p>
+
+      <h3>1. The Tenant Withholds the Tax</h3>
+      <p>This is the default <em>on paper</em>. The idea is:</p>
+      <ul className="space-y-2 my-4">
+        <li>• Tenant pays rent</li>
+        <li>• Tenant withholds 25%</li>
+        <li>• Tenant sends it to CRA</li>
+      </ul>
+
+      <p><strong>In real life?</strong> This almost never works smoothly.</p>
+      <p>Tenants:</p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>Don't want CRA responsibility</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>Forget deadlines</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>Move out mid-year</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>Push back when they realize what's involved</span>
+        </li>
+      </ul>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg my-6">
+        <p className="text-yellow-800">
+          <strong>Here's the part people miss:</strong> CRA can still come after <strong>you</strong>, the owner, if something goes wrong.
+        </p>
+      </div>
+
+      <h3>2. A Property Manager or Agent Handles It</h3>
+      <p>This is the <strong>most common setup</strong>. Typically:</p>
+      <ul className="space-y-2 my-4">
+        <li>• Tenant pays full rent to the manager</li>
+        <li>• Manager withholds the tax</li>
+        <li>• Manager remits to CRA</li>
+        <li>• Manager issues year-end slips</li>
+      </ul>
+
+      <p>This is more practical—but it's not risk-free.</p>
+      <p>If the manager:</p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Misses a payment</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Uses the wrong CRA account</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>Files something incorrectly</span>
+        </li>
+      </ul>
+
+      <p><strong>CRA still looks to you.</strong></p>
+      <p className="text-muted">Using an agent does not transfer liability.</p>
+
+      <h3>3. You Handle Withholding Yourself (Yes, Even as a Non-Resident)</h3>
+      <p>This surprises many people:</p>
+      <p><strong>Yes—a non-resident owner can handle the withholding themselves.</strong> Even if you live outside Canada.</p>
+      
+      <p>CRA allows this as long as:</p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>The correct amount is calculated</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Payments are sent on time</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>The right reference numbers are used</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Year-end slips are filed</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>The annual tax return is completed</span>
+        </li>
+      </ul>
+
+      <p>It's legal. But it's also where <strong>most mistakes happen</strong>.</p>
+
+      <h2>Where NR6 Fits Into This</h2>
+      <p>Filing an <strong>NR6</strong> can reduce how much tax is withheld each month.</p>
+
+      <p>What it <strong>does not</strong> do:</p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>It does not remove the obligation to remit</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+          <span>It does not decide <em>who</em> is responsible</span>
+        </li>
+      </ul>
+
+      <p>Someone still has to:</p>
+      <ul className="space-y-2 my-4">
+        <li>• Do the math</li>
+        <li>• Send money every month</li>
+        <li>• Keep records</li>
+        <li>• File slips</li>
+        <li>• Close the year properly</li>
+      </ul>
+
+      <p><strong>NR6 lowers the amount—it doesn't eliminate the work.</strong></p>
+
+      <h2>The Most Common Mistake CRA Sees</h2>
+      <p>Everyone assumes <strong>someone else is handling it</strong>.</p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-8">
+        <ul className="space-y-3 text-muted">
+          <li>• Tenant thinks the accountant does it</li>
+          <li>• Accountant assumes the property manager does it</li>
+          <li>• Property manager assumes the owner is handling it</li>
+        </ul>
+        <p className="mt-4 font-medium text-foreground">Months go by. Nothing is remitted.</p>
+        <p className="text-red-600 font-semibold mt-2">CRA doesn't argue about misunderstandings. They assess penalties.</p>
+      </div>
+
+      <h2>The Safest Way to Handle This</h2>
+      <p>You don't need anything fancy.</p>
+      <p>You just need <strong>one clearly defined party</strong> who is responsible for:</p>
+
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Withholding</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Monthly remittance</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span>Year-end slips</span>
+        </li>
+      </ul>
+
+      <p>And that responsibility should be:</p>
+      <ul className="space-y-2 my-4">
+        <li>• Clear</li>
+        <li>• Documented</li>
+        <li>• Reviewed once a year</li>
+      </ul>
+
+      <p><strong>CRA doesn't care <em>who</em> you choose. They care that it's done correctly.</strong></p>
+
+      <h2>Bottom Line</h2>
+      
+      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-6">
+        <ul className="space-y-2">
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>You <em>can</em> handle withholding yourself as a non-resident.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>You <em>can</em> assign an agent.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" />
+            <span>You <em>cannot</em> ignore it or assume it "just happens."</span>
+          </li>
+        </ul>
+      </div>
+
+      <p>Most problems come from confusion, not bad intent.</p>
+      <p><strong>Clear responsibility now saves a lot of stress later.</strong></p>
+
+      <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-8">
+        <h3 className="text-lg font-semibold text-foreground mb-2">How We Help</h3>
+        <p className="text-muted text-sm">
+          At NR6.ca, our $999 annual package includes monthly remittance handling, NR4 slips, and Section 216 filing. One party. One responsibility. No confusion.
+        </p>
+      </div>
+    </>
+  ),
+};
+
+// =============================================================================
 // ARTICLE 1: NR6 Form Explained (2026 Guide) - NEW
 // =============================================================================
 const article1 = {
@@ -1200,6 +1455,7 @@ const article10 = {
 // BLOG POSTS COLLECTION
 // =============================================================================
 const blogPosts: Record<string, typeof article1> = {
+  'who-handles-nr6-withholding': article0,
   'nr6-form-explained-2026-guide': article1,
   'nr6-deadline-missed-penalties-fixes': article2,
   'nr6-vs-section-216-difference': article3,
