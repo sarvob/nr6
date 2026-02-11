@@ -4,6 +4,411 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
 // =============================================================================
+// ARTICLE: How to Fill Out NR6 Form Step by Step - NEW
+// =============================================================================
+const articleHowToFillNR6 = {
+  title: 'How to Fill Out the NR6 Form: A Step-by-Step Guide (2026)',
+  excerpt: 'The official NR6 instructions can be confusing. Here\'s a plain-English walkthrough of every section—what to enter, where to send it, and common mistakes to avoid.',
+  date: '2026-02-10',
+  readTime: '10 min read',
+  category: 'How-To Guide',
+  image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=600&fit=crop',
+  metaDescription: 'Step-by-step guide to filling out the NR6 form for non-resident landlords in Canada. Learn what each section requires and how to avoid common mistakes.',
+  content: (
+    <>
+      <p className="text-xl text-muted leading-relaxed mb-8">
+        The NR6 form—officially called "Undertaking to File an Income Tax Return by a Non-Resident Receiving Rent from Real or Immovable Property"—is your ticket to reduced withholding tax. But the official instructions can feel like they were written for tax professionals, not regular landlords.
+      </p>
+
+      <p>This guide breaks down every section in plain English so you know exactly what to do.</p>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
+        <div className="flex items-start gap-3">
+          <Lightbulb className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-blue-800 mb-1">Before You Start</p>
+            <p className="text-blue-700">You'll need: your property address, estimated rental income and expenses for the year, your Canadian agent's information, and either a SIN, ITN, or tax account number.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>When to File the NR6</h2>
+      <p>
+        The NR6 must be filed <strong>before</strong> you start receiving rental income for the year. Specifically:
+      </p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span><strong>On or before January 1</strong> for properties you already own</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+          <span><strong>Before your first rental payment is due</strong> for newly acquired properties</span>
+        </li>
+      </ul>
+      <p>
+        You need to file a <strong>separate NR6 for each tax year</strong>. For individuals, the tax year is January 1 to December 31. For corporations, estates, and trusts, it follows your fiscal year end.
+      </p>
+
+      <h2>Section 1: Non-Resident Identification</h2>
+      <p>This section is about <strong>you</strong>—the property owner.</p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-6">
+        <h4 className="font-semibold text-foreground mb-4">What You'll Enter:</h4>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">1</div>
+            <div>
+              <p className="font-medium">Full legal name</p>
+              <p className="text-sm text-muted">As it appears on your tax documents</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">2</div>
+            <div>
+              <p className="font-medium">Complete address (including country)</p>
+              <p className="text-sm text-muted">Your residential address outside Canada</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">3</div>
+            <div>
+              <p className="font-medium">Phone number</p>
+              <p className="text-sm text-muted">Include country code for international numbers</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">4</div>
+            <div>
+              <p className="font-medium">Tax identification number</p>
+              <p className="text-sm text-muted">
+                <strong>For individuals:</strong> Canadian SIN or ITN (Individual Tax Number). Don't have one? You'll need to complete Form T1261.<br/>
+                <strong>For corporations/trusts:</strong> Canadian tax account number + fiscal year end
+              </p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">5</div>
+            <div>
+              <p className="font-medium">Date of birth</p>
+              <p className="text-sm text-muted">For individuals only</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">6</div>
+            <div>
+              <p className="font-medium">First month you expect rental income</p>
+              <p className="text-sm text-muted">Usually January for existing properties</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg my-6">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-yellow-800 mb-1">Common Mistake</p>
+            <p className="text-yellow-700">Incomplete forms are <strong>returned without processing</strong>. Double-check that every field is filled in before submitting.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Section 2: Rental Property Information</h2>
+      <p>This section covers <strong>your Canadian property and expected financials</strong>.</p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-6">
+        <h4 className="font-semibold text-foreground mb-4">What You'll Enter:</h4>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-medium">Full property address</p>
+              <p className="text-sm text-muted">Street number, street name, unit/suite number, city, province, postal code. For rural properties, include lot and concession numbers.</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-medium">Estimated gross rental income</p>
+              <p className="text-sm text-muted">Total rent you expect to collect for the year (before any expenses)</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-medium">Total estimated expenses</p>
+              <p className="text-sm text-muted">All deductible costs for the year</p>
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <div>
+              <p className="font-medium">Estimated net income</p>
+              <p className="text-sm text-muted">Gross income minus expenses</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Itemized Expense Breakdown (Required)</h3>
+      <p>
+        CRA requires you to attach a <strong>separate sheet with itemized expenses</strong>. This isn't optional—forms without it will be returned.
+      </p>
+
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b-2 border-primary bg-green-50">
+              <th className="text-left py-3 px-4 font-semibold">✓ Include These Expenses</th>
+              <th className="text-left py-3 px-4 font-semibold">✗ Do NOT Include</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b">
+              <td className="py-3 px-4">Mortgage interest</td>
+              <td className="py-3 px-4 text-red-600">Capital Cost Allowance (CCA)</td>
+            </tr>
+            <tr className="border-b bg-gray-50">
+              <td className="py-3 px-4">Property taxes</td>
+              <td className="py-3 px-4 text-red-600">Depreciation</td>
+            </tr>
+            <tr className="border-b">
+              <td className="py-3 px-4">Insurance</td>
+              <td className="py-3 px-4 text-red-600">Amortization</td>
+            </tr>
+            <tr className="border-b bg-gray-50">
+              <td className="py-3 px-4">Condo/strata fees</td>
+              <td className="py-3 px-4 text-muted text-sm">(Claim these on your Section 216 return instead)</td>
+            </tr>
+            <tr className="border-b">
+              <td className="py-3 px-4">Property management fees</td>
+              <td className="py-3 px-4"></td>
+            </tr>
+            <tr className="border-b bg-gray-50">
+              <td className="py-3 px-4">Repairs and maintenance</td>
+              <td className="py-3 px-4"></td>
+            </tr>
+            <tr className="border-b">
+              <td className="py-3 px-4">Utilities (if you pay them)</td>
+              <td className="py-3 px-4"></td>
+            </tr>
+            <tr>
+              <td className="py-3 px-4">Advertising for tenants</td>
+              <td className="py-3 px-4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-6">
+        <div className="flex items-start gap-3">
+          <Lightbulb className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-blue-800 mb-1">Multiple Properties?</p>
+            <p className="text-blue-700">List each property separately. If you run out of space, attach additional sheets. Each property needs its own income/expense breakdown.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Section 3: Non-Resident Undertaking (Your Commitment)</h2>
+      <p>
+        By signing this section, you're making a <strong>legal promise</strong> to CRA:
+      </p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-6">
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <span>You <strong>will file a Section 216 income tax return</strong> within 6 months of your tax year end (by June 30 for most individuals)</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <span>You understand that <strong>failing to file means you owe 25% of gross rent</strong> plus interest</span>
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        <strong>Sign and date</strong> in the designated area. If someone else signs on your behalf (power of attorney), they must print their name and attach the POA document.
+      </p>
+
+      <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg my-6">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-red-800 mb-1">This Is a Legal Commitment</p>
+            <p className="text-red-700">If you don't file the Section 216 return as promised, CRA will require you to pay the full 25% withholding on gross income (not net), plus interest. They don't send friendly reminders.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Section 4: Canadian Agent Identification</h2>
+      <p>
+        Your <strong>Canadian agent</strong> is a resident of Canada who receives rental payments on your behalf. This is a CRA requirement—you cannot file NR6 without one.
+      </p>
+
+      <div className="bg-gray-50 rounded-xl p-6 my-6">
+        <h4 className="font-semibold text-foreground mb-4">Agent Information Required:</h4>
+        <ul className="space-y-3">
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>Full name</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>Canadian address</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>Phone number</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>Non-resident tax account number (CRA assigns one if they don't have it)</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+            <span>Other CRA identifiers (BN, SIN, ITN, or trust account number)</span>
+          </li>
+        </ul>
+      </div>
+
+      <p><strong>The agent also signs the form</strong> and takes on responsibility:</p>
+      <ul className="space-y-2 my-4">
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>If you don't file Section 216, the agent may be liable for the 25% tax plus penalties</span>
+        </li>
+        <li className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-1" />
+          <span>The agent must file an NR4 return by March 31 (or within 90 days of fiscal year end)</span>
+        </li>
+      </ul>
+
+      <h2>Where to Submit the NR6</h2>
+      <p>You have several options:</p>
+
+      <div className="grid md:grid-cols-2 gap-4 my-6">
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h4 className="font-semibold text-foreground mb-2">📮 By Mail</h4>
+          <p className="text-sm text-muted">
+            Non-Resident Withholding Section<br/>
+            Canada Revenue Agency<br/>
+            PO Box 20000, Station A<br/>
+            Sudbury ON P3A 5C1
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h4 className="font-semibold text-foreground mb-2">💻 Online</h4>
+          <p className="text-sm text-muted">
+            Through CRA's "Submit Documents" service in My Account
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h4 className="font-semibold text-foreground mb-2">📠 By Fax</h4>
+          <p className="text-sm text-muted">
+            In Canada/US: 1-866-765-8460<br/>
+            International: 1-705-677-7712
+          </p>
+        </div>
+        <div className="bg-white border border-gray-200 rounded-lg p-5">
+          <h4 className="font-semibold text-foreground mb-2">❓ Questions?</h4>
+          <p className="text-sm text-muted">
+            In Canada/US: 1-855-284-5946<br/>
+            International: 613-940-8499
+          </p>
+        </div>
+      </div>
+
+      <h2>What Happens After You Submit</h2>
+      
+      <div className="space-y-4 my-6">
+        <div className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+          <div>
+            <p className="font-semibold">CRA reviews your form (4-8 weeks)</p>
+            <p className="text-muted text-sm">They verify all information is complete and accurate.</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+          <div>
+            <p className="font-semibold">Both you and your agent receive written approval</p>
+            <p className="text-muted text-sm">This letter confirms your reduced withholding rate.</p>
+          </div>
+        </div>
+        <div className="flex items-start gap-4">
+          <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+          <div>
+            <p className="font-semibold">Agent starts withholding at the new rate</p>
+            <p className="text-muted text-sm">Based on net income, not gross. Tax is remitted by the 15th of the following month.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg my-6">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+          <div>
+            <p className="font-semibold text-yellow-800 mb-1">Important: Until Approval</p>
+            <p className="text-yellow-700">Your agent <strong>must continue withholding 25% of gross rent</strong> until CRA approves the NR6 in writing. The reduced rate only applies after approval.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Your Ongoing Obligations</h2>
+
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b-2 border-primary bg-blue-50">
+              <th className="text-left py-3 px-4 font-semibold">Who</th>
+              <th className="text-left py-3 px-4 font-semibold">What</th>
+              <th className="text-left py-3 px-4 font-semibold">When</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b">
+              <td className="py-3 px-4 font-medium">Agent</td>
+              <td className="py-3 px-4">Remit withholding tax to CRA</td>
+              <td className="py-3 px-4">15th of following month</td>
+            </tr>
+            <tr className="border-b bg-gray-50">
+              <td className="py-3 px-4 font-medium">Agent</td>
+              <td className="py-3 px-4">File NR4 return</td>
+              <td className="py-3 px-4">By March 31</td>
+            </tr>
+            <tr className="border-b">
+              <td className="py-3 px-4 font-medium">You</td>
+              <td className="py-3 px-4">File Section 216 return</td>
+              <td className="py-3 px-4">By June 30</td>
+            </tr>
+            <tr>
+              <td className="py-3 px-4 font-medium">You</td>
+              <td className="py-3 px-4">File new NR6 for next year</td>
+              <td className="py-3 px-4">By December 31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>The Bottom Line</h2>
+      <p>
+        The NR6 form isn't complicated once you understand what each section requires. The key is being thorough—incomplete forms get returned, and late filings mean months of unnecessary 25% gross withholding.
+      </p>
+
+      <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mt-8">
+        <h3 className="text-lg font-semibold text-foreground mb-2">Skip the Paperwork</h3>
+        <p className="text-muted text-sm">
+          At NR6.ca, we handle the entire NR6 process for you—including acting as your Canadian agent, filing Section 216, monthly remittances, and NR4 slips. One flat fee. No forms to fill out yourself.
+        </p>
+      </div>
+    </>
+  ),
+};
+
+// =============================================================================
 // ARTICLE 0: Who Handles NR6 Withholding - NEW
 // =============================================================================
 const article0 = {
@@ -1455,6 +1860,7 @@ const article10 = {
 // BLOG POSTS COLLECTION
 // =============================================================================
 const blogPosts: Record<string, typeof article1> = {
+  'how-to-fill-out-nr6-form-step-by-step': articleHowToFillNR6,
   'who-handles-nr6-withholding': article0,
   'nr6-form-explained-2026-guide': article1,
   'nr6-deadline-missed-penalties-fixes': article2,
